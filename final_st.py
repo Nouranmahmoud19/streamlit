@@ -97,7 +97,7 @@ df_filtered['rush_hour'] = df_filtered['hour'].apply(is_rush_hour)
 
 
 model = joblib.load("bike_count_prediction_rf.joblib")
-ZIP_URL = "https://github.com/NouranMahmoud/bike-count/raw/main/bike_count_prediction_rf.zip"
+ZIP_URL = "https://github.com/Nouranmahmoud19/streamlit/blob/main/bike_count_prediction_rf.zip"
 
 @st.cache_resource
 def load_model_from_github(zip_url):
