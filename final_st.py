@@ -9,6 +9,7 @@ import numpy as np
 import requests
 import zipfile
 import io
+st.legacy_caching.clear_cache()
 
 st.set_page_config(page_title="Bike sharing Dashboard", layout="wide")
 
