@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 import numpy as np
+import requests
+import zipfile
+import io
 
 st.set_page_config(page_title="Bike sharing Dashboard", layout="wide")
 
@@ -95,7 +98,6 @@ df_filtered['rush_hour'] = df_filtered['hour'].apply(is_rush_hour)
 
 model = joblib.load("bike_count_prediction_rf.joblib")
 
-MODEL_TEST_R2 = 0.93
 
 # Input widgets for features
 st.markdown("### 🧑‍🔬 Predict Bike Rentals")
